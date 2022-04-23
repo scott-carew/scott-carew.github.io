@@ -1,111 +1,135 @@
 <!DOCTYPE html>
-<html>
+  <html>
 
-  <head>
-    <title>Inline vs. Inline Block</title>
-    <link href="../styles/main.css" rel="stylesheet" type="text/css">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet"> -->
-    <meta charset="UTF-8">
-  </head>
+    <head>
+      <title>Inline vs. Inline Block</title>
+      <link href="../styles/main.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Dancing+Script&family=Ubuntu&display=swap" rel="stylesheet">
+      <meta charset="UTF-8">
+    </head>
 
-  <body>
-    <h2>CSS Display: Block, Inline & Inline-block</h2>
+  <!-- header & navbar html -->
 
-    <div>
-      <p>Boxes boxes everywhere! If you’re new to web development, one of the first things you’ll learn is that essentially everything comes in the form of a box! Your headings are a box, your paragraphs are a box, those <span class="button">Sign In</span> and <span class="button">Sign up</span> buttons at the top of a page? Yup! Those are boxes too. Heck, even circles are boxes! And around those boxes, you guessed it - more boxes!
-      </p>
-      <p>So how do we manipulate and manage all of these boxes? Well, a commonly used property in CSS is the <code>display</code> property which basically tells an element how to appear on a page. Whilst there are many different values that the <code>display</code>  property can take on -  I'm just going to cover a few of the basics here:
-      </p>
-      <ul>
-        <li><code>display: block</code></li>
-        <li><code>display: inline</code></li>
-        <li><code>display: inline-block</code></li>
-      </ul>
+    <header class="image-container">    
+      <img id="bannerimage" src="../images/bannerimage3.png" alt="A Journey from Teacher to Tech">    
+    </header>
+
+    <nav>
+    <div class="nav-bar">
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#tech-blog">Tech Blog</a>
+        <a href="../index.html#core-blog">Core Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
+    </nav>
 
-    <div>
-      <h3>display: block</h3>
-      <p>Before we dive headfirst into the <code>inline</code> and <code>inline-block</code> values, it’s helpful to understand <code>block</code>.
-      </p>
+    <!-- body html --> 
+    <body>
+      <div class="body-container">
+        <div class="content-container">
 
-      <p>In CSS, many elements, by default, are <code>block</code> elements. What this means, is that when we have multiple elements, they appear on screen as a series of boxes sitting one <strong>on top</strong> of the other. Unless otherwise manipulated in some way, each element will take up the full width of the screen.
-      </p>
-      <p>To see this in action, let's take a look at some cheesey divs! (The <code>div</code> element, by default has the <code>display</code> value <code>block</code>).
-      </p>
+          <h1>CSS Display: Block, Inline & Inline-block</h1>
+          <h3>22 April 2022</h3>
+          <div>
+            <p>Boxes boxes everywhere! If you’re new to web development, one of the first things you’ll learn is that essentially everything comes in the form of a box! Your headings are a box, your paragraphs are a box, those <span class="button">Sign In</span> and <span class="button">Sign up</span> buttons at the top of a page? Yup! Those are boxes too. Heck, even circles are boxes! And around those boxes, you guessed it - more boxes!
+            </p>
+            <p>So how do we manipulate and manage all of these boxes? Well, a commonly used property in CSS is the <code>display</code> property which basically tells an element how to appear on a page. Whilst there are many different values that the <code>display</code>  property can take on -  I'm just going to cover a few of the basics here:
+            </p>
+            <ul>
+              <li><code>display: block</code></li>
+              <li><code>display: inline</code></li>
+              <li><code>display: inline-block</code></li>
+            </ul>
+          </div>
 
-      <figure>
-        <div>
-          <img src="../images/blockfull.png" alt="Cheesy block divs full width">
-          <figcaption>Notice how each element sits on top of the other, and extends the full width of the page?  
-          </figcaption>
+          <div>
+            <h2>display: block</h2>
+            <p>Before we dive headfirst into the <code>inline</code> and <code>inline-block</code> values, it’s helpful to understand <code>block</code>.
+            </p>
+            <p>In CSS, many elements, by default, are <code>block</code> elements. What this means, is that when we have multiple elements, they appear on screen as a series of boxes sitting one <strong>on top</strong> of the other. Unless otherwise manipulated in some way, each element will take up the full width of the screen.
+            </p>
+            <p>To see this in action, let's take a look at some cheesey divs! (The <code>div</code> element, by default has the <code>display</code> value <code>block</code>).
+            </p>
+            <figure>
+              <img src="../images/blockfull.png" alt="Cheesy block divs full width">
+              <figcaption>Notice how each element sits on top of the other, and extends the full width of the page?  
+              </figcaption>              
+            </figure>                      
+            <p>Can't we just adjust the width to make each div smaller so they can fit next to each other? You might be thinking...Well, we can adjust the width and height of block elements, however they're still going to sit  <strong>on top</strong> of each other because that's just the way blocks roll!
+            </p>
+            <figure>
+              <img src="../images/blockhalfwidth.png" alt="Cheesy block divs half screen width">
+              <figcaption>With a smaller width, these <code>divs</code> could fit next to each other onscreen, but blocks prefer to create their own little tower instead!
+              </figcaption>              
+            </figure>
+
+            <p><strong>Common examples of <code>block</code> elements include:</strong></p>
+            <ul>
+              <li>Paragraphs</li>
+              <li>All headings</li>
+              <li>Ordered and unordered lists</li>
+              <li>Articles, sections, divs</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2>display: inline</h2>
+            <p>Just like <code>display: block</code>, other elements in CSS default to <code>display: inline</code> and <code>span</code> is one of these! Now, I'm going to hazard a guess that you might be thinking - this means the elements will display in a line, right? Correct! Take a look at the cheesy <code>span</code> element below. A border has been placed around both the <code>div</code> and <code>span</code> elements for your viewing pleasure!
+            </p>
+            <figure>
+              <img src="../images/spaninline.png" alt="Cheesy span element inline with a div">
+              <figcaption>See how the information inside the <code>span</code> element can be easily targeted and set to blue, yet still fits inline with the rest of the text?
+              </figcaption>              
+            </figure>
+            <p>Now, the thing about <code>inline</code> elements, is that they tend to act like soldiers, and fall inline with the element that surrounds them. Changing the height and width (see 'blue castello' below) of the <code>inline</code> element has no effect. Whilst you can change the padding, and it will behave itself horizontally, take a look at what happens to 'cheese parmesan' in the image below when we do this. Chaos! This is basically the <code>div</code> element saying "I hear you, but I'm not listening! The padding simply covers the text above and below the line. No respect.
+            </p>
+            <figure>
+              <img src="../images/inline2.png" alt="Inline elements cannot change height or width">
+              <figcaption><code>inline</code> elements cannot change their height or width, and padding will not behave as desired.</figcaption>              
+            </figure>
+            <p><strong>Common examples of <code>in-line</code> elements include:</strong>
+            </p>
+            <ul>
+              <li>Anchor tags (or links) <code>< a ></a></code></li>
+              <li>Tags used to modify text inline such as <code>< strong ></strong></code>, <code>< em ></code>, <code>< u ></code> and  <code>< mark ></code></li>
+              <li><code>< span ></code></li>              
+            </ul>
+          </div>
+
+          <div>
+            <h2>display: inline-block</h2>
+            <p>But we're an inclusive bunch! So what if we want to have elements display inline, and have their width, height and padding elements all respected because diversity is key! Well, this is where <code>display: inline-block</code> comes in.
+            </p>    
+            <p>As you can see in the image below, by setting the <code>display</code> property to the <code>inline-block</code> value in the CSS, the changes we made in the previous example, are now respected. We can easily adjust the height, width, vertical and horizontal padding without fear of covering our other text.
+            </p>
+            <figure>            
+              <img src="../images/inline-block.png" alt="Inline-block eleemnts respect height, width and padding changes">
+              <figcaption>Notice that when we set each of our span elements to <code>display: inline-block</code> they remain inline, but also take on the changes to width, height and padding without overlay on the surrounding text.
+              </figcaption>
+            </figure>     
+            <p>When creating buttons, <code>display: inline-block</code> is commonly used - especially navigation bars - where you want the ability to style the elements, but also have them appear horizontally. It can also be used to style sections of text within a paragraph, without having a negative impact on the other elements that it falls inline with.
+            </p>            
+          </div>
+
+          <div>
+            <p>So that's it! Three values of the element <code>display</code> done and dusted! Hopefully you now have a better understanding of the difference between <code>display: block</code>, <code>display: inline</code> and <code>display: inline-block</code>.
+            </p>
+          </div>
         </div>
-      </figure>                      
-      <p>Can't we just adjust the width to make each div smaller so they can fit next to each other? You might be thinking...Well, we can adjust the width and height of block elements, however they're still going to sit  <strong>on top</strong> of each other because that's just the way blocks roll!
-      </p>
-      <figure>
+      </div>
+    </body>
+
+    <footer>
+      <div class="contact-container">
+        <h4 id="contact">Contact Me:</h4>
         <div>
-          <img src="../images/blockhalfwidth.png" alt="Cheesy block divs half screen width">
-          <figcaption>With a smaller width, these <code>divs</code> could fit next to each other onscreen, but blocks prefer to create their own little tower instead!
-          </figcaption>
+          <a href="https://www.instagram.com/scarooo/" target="_blank"><img class="contact-images" src="../images/insta.png" alt="Instagram Logo"></a>
+          <a href="https://www.linkedin.com/in/scottcarew/" target="_blank"><img class="contact-images" src="../images/linkedin.png" alt="LinkedIn Logo"></a>
+          <a href="https://github.com/scott-carew/" target="_blank"><img class="contact-images" src="../images/github.png" alt="Github Logo"></a>
         </div>
-      </figure>
-
-      <h4>Common examples of <code>block</code> elements include:</h4>
-      <ul>
-        <li>Paragraphs</li>
-        <li>All headings</li>
-        <li>Ordered and unordered lists</li>
-        <li>Articles, sections, divs</li>
-      </ul>
-  </div>
-
-  <div>
-    <h3>display: inline</h3>
-    <p>Just like <code>display: block</code>, other elements in CSS default to <code>display: inline</code> and <code>span</code> is one of these! Now, I'm going to hazard a guess that you might be thinking - this means the elements will display in a line, right? Correct! Take a look at the cheesy <code>span</code> element below. A border has been placed around both the <code>div</code> and <code>span</code> elements for your viewing pleasure!
-    </p>
-    <figure>
-      <div>
-        <img src="../images/spaninline.png" alt="Cheesy span element inline with a div">
-        <figcaption>See how the information inside the <code>span</code> element can be easily targeted and set to blue, yet still fits inline with the rest of the text?
-        </figcaption>
       </div>
-    </figure>
-    <p>Now, the thing about <code>inline</code> elements, is that they tend to act like soldiers, and fall inline with the element that surrounds them. Changing the height and width (see 'blue castello' below) of the <code>inline</code> element has no effect. Whilst you can change the padding, and it will behave itself horizontally, take a look at what happens to 'cheese parmesan' in the image below when we do this. Chaos! This is basically the <code>div</code> element saying "I hear you, but I'm not listening! The padding simply covers the text above and below the line. No respect.
-    </p>
-    <figure>
-      <div>
-        <img src="../images/inline2.png" alt="Inline elements cannot change height or width">
-        <figcaption><code>inline</code> elements cannot change their height or width, and padding will not behave as desired.</figcaption>
-      </div>
-    </figure>
-      <h4>Common examples of <code>in-line</code> elements include:</h4>
-      <ul>
-        <li><code>a</code> Anchor tags (or links)</li>
-        <li><code>strong</code> <code>em</code> <code>mark</code></li>
-        <li><code>span</code></li>              
-      </ul>
-  </div>
+    </footer> 
 
-  <div>
-    <h3>display: inline-block</h3>
-    <p>But we're an inclusive bunch. So what if we want to have elements display inline, and have their width, height and padding elements all respected because diversity is key! Well, this is where <code>display: inline-block</code> comes in.
-    </p>    
-    <p>As you can see in the image below, by setting the <code>display</code> property to the <code>inline-block</code> value in the CSS, the changes we made in the previous example, are now respected. We can easily adjust the height, width, vertical and horizontal padding without fear of covering our other text.
-    </p>
-    <figure>
-      <div>
-        <img src="../images/inline-block.png" alt="Inline-block eleemnts respect height, width and padding changes">
-        <figcaption>Notice that when we set each of our span elements to <code>display: inline-block</code> they remain inline, but also take on the changes to width, height and padding without overlay on the surrounding text.
-        </figcaption>        
-      </div>
-      <p><code>display: inline-block</code> is commonly used when creating buttons - especially navigation bars - where you want the ability to style the elements, but also have them appear horizontally. It can also be used to style sections of text within a paragraph, without having a negative impact on the other elements that it falls inline with.
-      </p>
-    </figure>
-  </div>
-
-  <div>
-    <p>So that's it! Three values of the element <code>display</code> done and dusted! Hopefully you now have a better understanding of the difference between <code>display: block</code>, <code>display: inline</code> and <code>display: inline-block</code>.</p>
-  </div>
-  </body>
+  </html>

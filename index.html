@@ -1,38 +1,77 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>Teacher to Tech Blog</title>
     <link href="./styles/main.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Dancing+Script&family=Ubuntu&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
   </head>
-  <nav>
-    <ul>
-      <li><a href="https://scott-carew.github.io/index.html">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Blog Posts</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-  <header>
-    <h1>A Journey<br>From Teacher to Tech</h1>
-  </header>
-  <body>
 
-    <div class="intro">
-      
-      <div class="intro-container"> 
-        <div class="intro-main">
-          <p> Welcome to my homepage!</p>
-          <p> As I begin my journey in making a career change from teacher to tech professional, this blog will allow me to apply the practical skills that I have learnt throughout process, and also serve as a place to reflect on those learnings along the way.</p>
-          <p>I hope you enjoy!</p>
-          <p><span class="signature">Scott</span></p>
-        </div>
-        <img class="image" src="./images/me.png" alt="Picture of me">
+<!-- header & navbar html -->
+
+  <header class="image-container">    
+      <img id="bannerimage" src="./images/bannerimage3.png" alt="A Journey from Teacher to Tech">    
+  </header>
+
+  <nav>
+    <div class="nav-bar">
+      <div class="nav-links">
+        <a href="https://scott-carew.github.io/index.html">Home</a>
+        <a href="#tech-blog">Tech Blog</a>
+        <a href="#core-blog">Core Blog</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
-  </body>
-  <footer>
-  </footer>
+  </nav>
+
+<!-- body html -->
+
+<body>
+  <div class="body-container">
+    <div class="content-container">
+      <h1>Welcome to my blog!</h1>
+      <div class="welcome-image-container">
+        <img class="welcomeimage" src="./images/me.png" alt="Picture of me">
+      </div>
+      <div class="welcome-text-container">
+        <p> As I begin my journey in making a career change from teacher to tech professional, this blog will allow me to apply the practical skills that I have learnt throughout process, and also serve as a place to reflect on those learnings along the way.</p>
+        <p>Enjoy!</p>
+        <p class="signature">Scott</p>  
+      </div>    
+      <hr>
+      <h2 id="tech-blog" class="center-text">Tech Blog</h2>
+      <div class="welcome-image-container">
+        <img class="homeimages" src="./images/tech.jpg" alt="Computer with coding">
+      </div>
+        <div class="homepage-links">
+          <a href="./blog/html-css.html">CSS Display: Block, Inline & Inline-block</a>
+        </div>
+      <hr>
+      <h2 id="core-blog" class="center-text">Core Blog</h2>
+        <div class="welcome-image-container">
+          <img class="homeimages" src="./images/core.jpg" alt="Man looking at mountains">
+        </div>
+        <div class="homepage-links">
+          <a href="./blog/#.html">Identity & Values</a>
+          <a href="./blog/#.html">Learning Plan</a>
+        </div>
+    </div>
+  </div>
+</body>
+
+<!-- footer html -->
+
+<footer>
+  <div class="contact-container">
+    <h4 id="contact">Contact Me:</h4>
+    <div>
+      <a href="https://www.instagram.com/scarooo/" target="_blank"><img class="contact-images" src="./images/insta.png" alt="Instagram Logo"></a>
+      <a href="https://www.linkedin.com/in/scottcarew/" target="_blank"><img class="contact-images" src="./images/linkedin.png" alt="LinkedIn Logo"></a>
+      <a href="https://github.com/scott-carew/" target="_blank"><img class="contact-images" src="./images/github.png" alt="Github Logo"></a>
+    </div>
+  </div>
+</footer> 
 </html>
+
+

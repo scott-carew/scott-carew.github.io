@@ -1,69 +1,217 @@
-  * {
-  font-family: 'Lato', sans-serif;
-  color: #17252A;
-  box-sizing: border-box;
-  /*border: 1px solid red */
-}
+/* Universal Styling */
 
-nav {
+* {
+  /* outline: 1px solid red; */
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif; 
+  color: #123c69
+} 
+
+img {
   width: 100%;
-  height: 70px;
-  background-color: #;
-  margin-bottom: 20px;
-  align-items: center;
+  height: auto;
 }
 
-ul {
-  width: auto;
-  float: right;
-  margin-top: 8px;
+h1 {
+  font-family: 'Carter One', cursive;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #427bb8
+}
+
+h3 {
+  color: #7d90a7;
+  text-align: center;
+  font-style: italic;
+}
+
+p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5em;
 }
 
 li {
-  display: inline-block;
-  padding: 15px 30px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-a {
-  text-align: center;
-  text-decoration: none;
+figure {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figcaption {
+  color: #7d90a7;
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: 0.4em;
+}
+
+code {
+  font-family: monospace;
+  background: lightgray;
+  color: black;
   font-size: 1.2em;
-  color: #
 }
 
-a:hover {
-  color: 
+hr {
+  background-color: #f1ece9;
+  height: 3px;
 }
+
+/* header & navbar CSS */
+
+header {
+  width: 100%;
+  height:20vh;
+  background: #f1ece9;  
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+#bannerimage {
+  width: auto;
+  height: auto;
+}
+
+.nav-bar {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #123c69;  
+}
+
+.nav-links {
+  width: 60%;
+  height: 6vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;  
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f1ece9;
+}
+
+.nav-links a:hover {
+  color: #7d90a7;
+}
+
+/*Body CSS*/
 
 body {
-  background-color: #;
-  margin: 0;
-  padding: 0;
+  background-color: #d5dce4;  
 }
 
-.intro {
-  margin-left: 20px;
-  margin-top: 20px;
+.body-container {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  }
+
+.content-container {
+  
 }
 
-.intro-container {
+.welcome-image-container {
   display: flex;
+  justify-content: center;
 }
 
-.intro-main {
-  max-width: 75%;
-  margin-right: 2em;
+.welcomeimage {
+  border-radius: 50%;
+  max-width: 10em;
+  margin: 1rem auto;
+  box-shadow: 6px 6px 46px -5px #123c69;
+  }
+
+.welcome-text-container {
+  padding: 0 8em;
 }
 
 .signature {
   font-family: 'Dancing Script', cursive;
   font-size: 3rem;
-  rotate: 10deg;
+  line-height: 1.2rem;
+  margin-bottom: 1em;
+  }
+
+.center-text {
+  text-align: center;
 }
 
-.image {
-  height: 20vw;
-  width: 20vw;
-  border-radius: 50%;
-  padding: 20 30;
+.homeimages {
+  max-width: 10em;
+  max-height: 10em;
+  margin: 1rem auto;
+  border-radius: 6px;
+  box-shadow: 6px 6px 46px -5px #123c69;
 }
+
+.homepage-links {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;  
+}
+
+.homepage-links a {
+  text-decoration: none;
+  font-size: 1.2em;
+  display: block;  
+  line-height: 1.5em;
+}
+
+.homepage-links a:hover {
+  color: #7d90a7;
+}
+
+/*Footer CSS*/
+
+footer {
+  background-color: #f1Ece9
+}
+
+.contact-container {
+  width: 100%;
+  background-color: #f1ECE9;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+.contact-images {
+  display: inline-flex;
+  width: 2em;
+  height: 2em;
+  margin: 0 10px;
+}
+
+#contact {
+  padding: 1em;
+}
+
+/* CSS Blog Post Styling Starts Here */
+
+.button {
+  display: inline-block;
+  padding: 0.2em;
+  font-size: 0.8em;
+  background-color: #f1ece9;
+  border: 2px solid #123C69;
+  border-radius: 4px;
+}
+
