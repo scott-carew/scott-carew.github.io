@@ -24,7 +24,10 @@ h2 {
 }
 
 h3 {
-  color: #7d90a7;
+  color: #7d90a7;  
+}
+
+#date {
   text-align: center;
   font-style: italic;
 }
