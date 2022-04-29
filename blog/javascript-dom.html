@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="../styles/main.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Dancing+Script&family=Ubuntu&display=swap" rel="stylesheet">
+        <title>JS Fundamentals</title>
+    </head>
+    
+  <!-- header & navbar html -->
+
+  <header class="image-container">    
+    <img id="bannerimage" src="../images/bannerimage3.png" alt="A Journey from Teacher to Tech">    
+  </header>
+
+  <nav>
+    <div class="nav-bar">
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#tech-blog">Tech Blog</a>
+        <a href="../index.html#core-blog">Core Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- body html --> 
+  <body>
+    <div class="body-container">
+      <div class="content-container">
+        <h1>Javascript Fundamentals</h1>
+        <h3 id="date">29 April 2022</h3>
+        <p>Every web developer must have a basic understanding of HTML, CSS and Javascript. But who are these three amigos? And how do they interact to create a functioning website? This post is going to dive a little deeper into some of the basics of Javascript and its two mates HTML and CSS.</p>
+        <h2>HTML, CSS and Javascript</h2>
+        <p>When considering the process of building a website, I like to think of it like building and designing a house.          
+        </p>
+        <p>Let’s take the builder - that’s HTML.  Just as a builder lays the foundations for a house by creating the framework, and putting all of the basics in place such as the walls, windows, cupboards etc. HTML does the same to a website. Within HTML, there is some scope for layout but ultimately, the end result is a pretty basic shell.          
+        </p>
+        <p>Now, the thing about houses is that they’re very personal. We’re not really interested in a basic shell - we want things to look nice and so we bring in a designer - that’s CSS. For our house, the designer might come in and decide to paint each of our rooms a different colour, add carpet, or bring in furniture and appliances - putting careful thought and consideration into where each item is placed to make sure our house is not only functional, but also aesthetically pleasing. CSS does exactly that for our websites. It takes the basic building blocks provided by HTML, and styles them in a way that is pleasing to look at by adding color, borders, margins and padding, changing the layout of items etc.          
+        </p>
+        <p>Our house is now built and styled, and that’s great. It works, kinda. But you probably wouldn’t want to live there yet because it’s missing some key functionality. Here’s where the tradies - or Javascript come in. In order for a house to be livable, we might want some running water for our showers, gardens and washing machines or some electricity to power up our lights, televisions and kitchen appliances. An electrician or a plumber will provide that functionality to make our house more interactive in a similar way that Javascript provides interactivity to our websites. Without Javascript, our website is essentially just a bunch of (hopefully) pretty information and images on a page. It doesn’t really do a whole lot. Javascript provides the interactive elements that engage the user by performing tasks such as dynamically updating content, controlling multimedia and animating images amongst other things.          
+        </p>
+        <h2>Control Flow and Looping</h2>
+        <p>Javascript code by default, is executed from top to bottom, line by line. This however can be changed with control flow. Control flow is an important concept in Javascript, that allows our program to make decisions about what code is executed and when. The conditional statements and loops that Javascript contains, enable us to control the flow of our code.
+        </p>
+        <p>Conditional statements are basically checks to see whether a certain condition is either true or false. If the condition is true, run code A, if the condition is false, run code B.
+        </p>
+        <p>Loops allow us to perform repetitive tasks with less code. Using loops, we can compile a list of all items, or iterate over an array and perform some sort of action on each piece of data.
+        </p>
+        <p>Not making sense? Bare with me while we consider control flow in the process of doing the dishes after a dinner party. When doing the dishes, there is a set of logical steps that need to happen in a particular order for the task to be completed successfully:
+        </p>
+        <ol>
+          <li>Collect the dish from the table</li>
+          <li>Stack the dish by the sink</li>
+          <li>Wash the dish</li>
+          <li>Dry the dish</li>
+          <li>Put the dish away</li>          
+        </ol>
+        <p>Now what would happen if we had some dishes on the table, which weren’t used during the dinner party? It wouldn’t make sense to complete steps 2, 3 and 4 because those dishes aren’t dirty. You can think of this as our conditional. If a dish is dirty, complete steps 1 - 5, or else skip straight to step 5.
+        </p>
+        <p>We use a loop to perform this logic for each dish we collect from the table until there are no more dishes left to collect. Similarly, a loop could be used for the washing, drying or putting away processes. In each case, a certain action should be performed on each dish and this action should be repeated for all dishes until there are no more dishes left to complete that action for.</p>
+        <figure>
+          <img id='dishes' src="../images/dishes.png" alt="Control Flow Diagram for Dishes">
+          <figcaption>Diagram showing the control flow process for doing the dishes.</figcaption>
+        </figure>
+       
+        <h2>The Dom</h2>
+        <p> The DOM, or Document Object Model is an ‘application programming interface’ (API) which Javascript uses to interact with the content of a web page. It can be used to add, delete or change content on an HTML document as your webpage is being viewed in a web browser. At a basic level, it is an object representation of what your HTML document looks like.
+        <p> 
+        <p>The ‘Document’ in ‘Document Object Model’ is just the webpage. Whether you’re viewing your webpage in a code editor, or a web browser - it’s essentially the same thing.
+        </p>
+        <p>‘Objects’ are elements, and every HTML element (for example: &lt;head&gt;, &lt;body&gt;, &lt;p&gt;, &lt;ul&gt; etc.) is an object. Javascript can then use these objects to locate, add to them, delete them or modify them in some way. 
+        </p> 
+        <p>The final part is the 'Model' which describes how each of the objects is laid out in a tree, or hierarchial fashion within the document. If you imagine it as sort of like a family tree, where each object follows the parent/child/sibling relationship resulting in a series of branches. See simplified diagram below:</p>
+        <figure>
+          <img class='blog-images' src="../images/dom.png" alt="A diagram example of the DOM">
+          <figcaption>Source: <a href="https://en.wikipedia.org/wiki/Document_Object_Model">Wikipedia.com</a></figcaption>
+        </figure>
+        <p>In the model, we refer to anything we can change as a 'node'. Nodes can be elements, attributes, text content, comments etc. and each of these nodes can be targeted separately and modified.</p>
+        <p>So this gives a bit of an understanding of what the DOM is, but how might we choose to interact with it? A common way to interact with the DOM, is to locate or target certain elements using the <code>document.querySelector()</code> method. Using this method, we can easily locate elements by type, class or id.</p>
+        <p>Once located, we can use the <code>innerHTML</code> attribute of the element to make changes such as replacing the text. In addition, let's say we want our page to be interactive, we can add 'event handlers' to objects and provide a function that occurs that event occurs. Let's say for example, we have an image on a page, which we want to animate on the click of a mouse button. These actions can be targeted using the DOM.</p>
+        <p>There might be times where we want to move nodes to another place on a page, delete them entirely or restyle. All of this is possible.        
+        </p>
+      
+        <h2>Arrays and Objects</h2>
+        <p>In JavaScript, we use variables like a container, to store one type information such as text (strings), numbers or boolean (true/false) values. Arrays and objects differ in that both are capable of storing datasets. As both arrays and objects store sets of information, it's important that we understand how we can access the data contained in each of these.
+        </p>
+        <p>First, let's look at arrays. An array is a single variable, that is used to store a collection of similar data elements (a list) inside square brackets []. We can access the information in the array by targeting each element's 'index position'. Say for example, we have an array of our four favorite TV shows. Each TV show, will be given an index position based on where it occurs in our array, starting with 0, then 1, 2, 3 etc. It's important to note that even though we have four items in our array, our index position only goes up to three because we always start counting at index position 0. Take a look at the image of our array below. Each TV show has been logged to the console, based on it's index position. You'll see that <code>console.log (favTVShows[4])</code> returns 'undefined' because there is no TV show listed at index position 4.
+        </p>
+        <figure>
+          <img class='blog-images' src="../images/arrays.png" alt="An array of favorite TV shows with corresponding index positions">
+        </figure>
+        <p>While an array is a special type of variable, which can hold more than one value (as seen in our TV show example), objects are variables too, however they contain many values, which can be assigned to different properties or keys. We call these 'key:value pairs' and we can access data from objects by targeting these key:value pairs (similar to how we target the index position in an array). After we define the object variable, we enclose our key:value pairs inside a set of curly braces {}.         
+        </p>
+        <p>To better understand objects and their key:value pairs, let's consider our TV shows from the previous example as objects, and think about how all TV shows might have similar properties, but the values of those properties will differ from TV show to TV show. Let us consider some properties of TV shows: 'creator', 'genre', 'rating', 'year released', 'number of seasons' and use Six Feet Under as our example below.     
+        </p>
+        <figure>
+          <img class='blog-images' src="../images/objects.png" alt="SixFeetUnder object with key:value pairs">
+          <figcaption>Accessing data from the Six Feet Under object</figcaption>
+        </figure>
+        <p>As you can see in the above image, we have named the object 'SixFeetUnder' and given it a set of properties or keys - each with it's own value. To access the data from within the object, we can target the object as a whole, simply by using it's name (as seen in the first console.log) or, we can target individual key:value pairs by using the formula 'objectName.key' (as seen in the second console.log).          
+        </p>
+        <p>Once you know how, accessing data from arrays and objects is pretty easy. You simply need to remember that when dealing with an array, you target the index position, and when dealing with an object, you target the key:value pair you are interested in.</p>
+      
+        <h2>Functions</h2>
+        <p>Functions are essentially a list of instructions that you give the computer to perform. When programming, we often use our code to perform the same task multiple times over. Rewriting the same code each time, would be time consuming, and open us up to a whole range of potential errors and bugs. This is where functions come in. We can group a block of code together, and use it to perform a certain task over and over again.        
+        </p>
+        <p>In order to create a function, we first need to declare/define it. We do this using the <code>function</code> key word. Then, we need to name the function, followed by a set of curly braces{}. Inside the curly braces, is the function body which includes a statement, or block of statements that refer to the specific task we want performed.
+        </p>
+        <p>Once a function has been declared, it will not automatically run. We need to 'call' that function by listing it's name/identifier followed by a set of round brackets. If we want, we can further modify our functions by inputting parameters which can be passed to the function when called - as seen in the image below.        
+        </p>
+        <figure>
+          <img class='blog-images' src="../images/functions.png" alt="Two functions showing how to calculate the area of a rectangle and a welcome">
+          <figcaption>The first function named areaOfRectangle takes the parameters width and height. It logs the product of width * height to the console when called. The second function named welcome takes the parameter firstName, and logs a welcome greeting + the value of firstName to the console when called.</figcaption>
+        </figure>
+        <p>Functions are really helpful as they allow us to define a block of code, give it a name, and then execute it as many times as we want without the need to duplicate our code.</p>
+    
+      </div>
+    </div>
+  </body>
+  
+
+  <footer>
+    <div class="contact-container">
+      <h4 id="contact">Contact Me:</h4>
+      <div>
+        <a href="https://www.instagram.com/scarooo/" target="_blank"><img class="contact-images" src="../images/insta.png" alt="Instagram Logo"></a>
+        <a href="https://www.linkedin.com/in/scottcarew/" target="_blank"><img class="contact-images" src="../images/linkedin.png" alt="LinkedIn Logo"></a>
+        <a href="https://github.com/scott-carew/" target="_blank"><img class="contact-images" src="../images/github.png" alt="Github Logo"></a>
+      </div>
+    </div>
+  </footer> 
+  
+  
+</html>

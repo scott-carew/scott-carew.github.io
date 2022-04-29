@@ -119,7 +119,7 @@ body {
 }
 
 .body-container {
-  width: 75%;
+  width: 65%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
@@ -180,6 +180,15 @@ body {
 
 .homepage-links a:hover {
   color: #7d90a7;
+}
+
+.blog-images {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#dishes {
+  width: 90%;
 }
 
 /*Footer CSS*/
