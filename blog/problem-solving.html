@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="../styles/main.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Dancing+Script&family=Ubuntu&display=swap" rel="stylesheet">
+        <title>Problem Solving</title>
+    </head>
+    
+  <!-- header & navbar html -->
+
+  <header class="image-container">    
+    <img id="bannerimage" src="../images/bannerimage3.png" alt="A Journey from Teacher to Tech">    
+  </header>
+
+  <nav>
+    <div class="nav-bar">
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#tech-blog">Tech Blog</a>
+        <a href="../index.html#core-blog">Core Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- body html --> 
+<body>
+  <div class="body-container">
+    <div class="content-container">
+      <h1>How Do You Solve a Problem Like Maria?</h1>
+      <h3 id="date">6 May 2022</h3>
+      <h2>Where are YOU Scooby Doo?</h2>
+      <p>
+        So I set out today on a mission - find Scooby Doo! Apparently he was hiding behind a door, and it was my job to figure out which one. I checked the tests, so I knew where he was hiding. I guess to put it better, it was my job to help Javascript find out which door he was behind by completing the function.
+      </p>
+      <div class="image-container">
+        <img class="images" src="../images/scoobyhiding.jpeg" alt="Scooby in Trash Can">
+      </div>
+      <p>
+        According to the instructions, to help, I might like to try using console.log (which basically outputs a message to the web console) or check the information in the included tests for the task. I’d do both.
+      </p>
+      <code>console.log(arr)</code>
+      <p>
+        Nothing. Well, worse than nothing - big red scary text! Something about ‘arr’ being ‘undefined’? This message seems vaguely familiar, though I can’t quite recall, however I know where the tests are - so I decided to go and have a look at those instead!
+      </p>
+      <p>
+        As I looked through the tests, my eyes were immediately drawn to line number 17. Door 1! Scooby is ‘hiding’ behind door 1! I take a look, and I can see that the array being put into the test has curly brackets with what looks to be pairs of information inside. “Hmmm…” I think to myself - quite chuffed, “This looks like an object!”. And the word ‘hiding’ is going to be very helpful.
+      </p>
+      <p>
+        So I return, with my newfound information, to the instructions, re-read and note the keyword ‘find’ written there. This is not an array term I’ve used before, so a bit of Google research is needed to figure out what it is, how it looks, and what it does. I do a bit of reading, I do a bit of note-taking, and I look over the example. Seems easy enough!
+      </p>
+      <p>
+        Going back to my function, I begin to write my pseudocode which will be an outline of my instructions in English. I jot the points down, begin tapping away, typing out my function. When I think it looks pretty good - I decide to run. Red text again.
+      </p>
+      <div class="image-container">
+        <img class="images" src="../images/scoobyconfused.gif" alt="Scooby Confused">
+      </div>
+      <p>
+        I was feeling OK at this point, I mean, it was only my first shot. I decided to go back to the example and check the code against my example. It looked OK to me. Sure, the examples are different, and the context is not the same - nor am I an expert by any means - but it looked pretty good. I decided to do a bit more research on Google to find some more examples, and have a look back through my notes and previous exercises for similar functions. Then, I muddled around a bit with my code, trying a bit of this, and a bit of that, but still without success. 
+      </p>
+      <p>
+        Time to turn to Discord. I found another student had been struggling with the same question. When I compared my code to his, it looked pretty similar - awesome. I was heading in the right direction. I read the thread with the facilitator, and what was being said, didn’t make a lot of sense. I took a pause and re-read, slowly and out loud. Something about an empty array, and this needing to equal 0. An empty array, this was news to me! I decided to console.log again, but this time, inside my function. Win! I could see the information - and the empty arrays!
+      </p>
+      <p>
+        I had an idea, and I decided to give it a go. Ran the test and BOOM!
+      </p>
+      <p>
+        <code>1. Pass</code>
+      </p>
+      <p>
+        <code>2. Pass</code>
+      </p>
+      <p>
+        <code>3. Pass</code>
+      </p>
+      <p>
+        <code>4. Pass</code>
+      </p>
+      <p>
+        <code>5. Pass</code>
+      </p>
+      <p>
+        <code>6. Pass</code>
+      </p>
+      <p>
+        Success! Scooby was found! Before moving on, I’d reread my code to get a better understanding of what happened, then go back, and update my pseudocode so that it matched my final answer. This would help solidify my understanding, and be a good reference for later when I’ll probably forget and need some prompting.
+      </p>
+      <div class="image-container">
+        <img class="images" src="../images/scoobysuccess.png" alt="Scooby Dancing">
+      </div>
+      <p>
+        While perhaps not flawless, or entirely elegant I was proud that I’d managed to pass the tests, using the tools available, and my problem solving skills to do so. Problems don’t have to be stressful, and it’s fine if they’re not solved immediately. Just use the tools you have in your toolbox, and try to approach each problem with a fresh mind, and a clear goal.
+      </p>
+      <h2>What the Buzz?</h2>
+      <p>
+        Hot off the heels of my success with Scooby, I decided to tackle a swarm of bees who had apparently infected some sentences with a bunch of bizzing and buzzing. The job was clear, remove those buzzes from the sentences and spit them out again in plain English.
+      </p>
+      <div class="image-container">
+        <img class="images" src="../images/swattingbees3.png" alt="Swatting Bees">
+      </div>
+      <p>
+        I started out, as I had done with Scooby, reading the instructions, taking note of the key terms, researching, and making my notes before writing my pseudocode. I thought this task looked similar, yet different to a previous task I’d encountered, so I had a quick look back for reference, and I was on my way.
+      </p>
+      <p>
+        I wanted to wrap my head around the problem better, so I decided to use <code>console.log</code> again, but this time, within the function. All I saw was a bunch of individual letters - which I could kinda  make out words from, but not easily! This didn’t look right? I decided to go back to my function, and place an extra space between a set of quotation marks I’d used. Interesting. It returned the words! I love it when you learn something through mistake and reflection!
+      </p>
+      <p>
+        Feeling confident, I moved on - wrote the rest of my code, and checked it against the example. After a couple of small stumbles, and some trial and error, I passed test one and was onto test two. I read the error, refactored my code and ran again.
+      </p>
+      <p>
+        <code>‘Expected: Help! I’m surrounded by bees!!</code>
+      </p>
+      <p>
+        <code>‘Returned: “”’</code>
+      </p>
+      <p>
+        Nothing? What do you mean nothing? Back to my notes. Everything looked good. Back to google. Seems OK…I think?I started playing with <code>console.log</code> and that didn’t seem to help me move forward. I played around with spacing, and semicolons - either making no progress, or getting further from the solution. By this stage, I was googling things that probably weren’t helpful, the number of tabs open in my browser was increasing exponentially and agitation was setting in. Time to phone a friend.
+      </p>
+      <div class="image-container">
+        <img class="images" src="../images/swatting bees2.png" alt="Tough Bee">
+      </div>
+      <p>
+        I reached out to a group member on Discord who had solved the problem, and they asked to see my code. “So close” came the response. At this point, I think I started to become more focussed on the result rather than the process. I started questioning, and the hints that were coming back didn’t make a whole lot of sense. My mind wasn’t clear, and I was just plugging things in willy nilly - I guess you could call this the ‘try something’ technique? Though, I wouldn’t say it was carried out intelligently.
+      </p>
+      <p>
+        Messages just weren’t cutting the mustard, so I picked up the phone. I was told I was literally missing one word. Argh! So close, yet so far. Through several more hints, I determined the missing word was ‘return’. Back to plugging away, I moved my existing return statement, and added return in places that it just didn’t make sense. More frustration In the end, I only had one place left to put it. It worked. 
+      </p>
+      <p>
+        When I looked back at the working function, it was SO obvious! I mean, the word ‘return’ was listed in the same place, in the problem above, and the one above that also. The hard part I’d done fine, I was just overlooking something so simple.
+      </p>
+      <div class="image-container">
+        <img class="images" src="../images/swattingbees1.png" alt="Dead Bee">
+      </div>
+      <p>
+        The moral of the story, fresh eyes can make a big difference. In hindsight, I should have taken a break after finding Scooby - giving my brain a chance to rest, and my eyes a chance to regroup. Also, when faced with a problem, go back and piece it together step by step. In this case, I was focusing on the bigger picture, and overlooking the smaller details which were oh so obvious when pointed out. I guess I’m still learning to apply what I already know.
+      </p>
+      <h2>A Reflection on Problem Solving Techniques</h2>
+      <h3>Pseudocode</h3>
+      <p>
+        Pseudocode - writing a simpler version of programming code in plain English before it’s implemented into a specific programming language, representing our thinking and approach to solving a problem.
+      </p>
+      <p>
+        I get it. I like it and hey, sometimes I even use it! What I’m finding however, is that whilst I start off with some very vague pseudocode, my final solution to a problem is often way off the pseudocode itself after a bunch of trial and error. I generally have to return, and rewrite it AFTER I have solved the problem as it doesn’t always match. I could be better at making adjustments to my pseudocode as I go, and using it more consistently also.
+      </p>
+      <h3>Try Something</h3>
+      <p>
+        I’m pretty good at trying things. Though the things I try, I’m not always sure why I’m trying them especially when I get to the point where something I believe should work - does not. If I go back to the problem solving process, being mindful of the ‘understand’ step would be helpful. Understanding why my solutions may not be working, and being clear on my intention of what it is that’s being asked, and what I’m trying to achieve, might streamline my approach to using this method.
+      </p>
+      <h3>Rubber Ducky</h3>
+      <p>
+        The rubber ducky method is a software engineering technique that developers often use to help debug their code when they become blocked. It involves having a rubber ducky at hand, and explaining your problem to the duck. Outline what your code is supposed to do, and go into detail of explaining it line by line. Hopefully, at some point, whilst explaining the code to the duck, you’ll realise that what your intending to do, is not what you’re actually doing - and huzzah! Problem solved.
+      </p>
+      <div class="image-container">
+        <img class="images" src="../images/llama.avif" alt="Toy Llama">
+      </div>
+      <p>
+        I don’t have a rubber duck. I do however have a little llama. He’s been cooped up in a box for the last few years, and yesterday, I took him out, and placed him on my desk. Llama and I don’t have a great relationship - yet. I haven’t actually talked to him, and he doesn’t even have a name. Perhaps I’ll invite him to breakfast this morning, and we can start getting to know each other, so that he can become my duck and help me solve my problems.
+      </p>
+      <h3>Reading Error Messages</h3>
+      <p>
+        Error messages can be particularly helpful in helping you understand why something is not working. They contain crucial pieces of information. I’ve reached the point where I stop seeing them as a wall, and I’ve actually started to read them. I don’t necessarily always understand what they are saying however, or how to translate that message into useful information which will help me solve my issue - instead, I generally just undo my previous step until the error goes away. I guess I need more practice with reading and interpreting error messages.
+      </p>
+      <h3>Console.Logging</h3>
+      <p>
+        <code>console.log</code> is a method which is used to write messages to the web console of our browser, and can be super useful when it comes time to solving a problem, by allowing us to see a temporary result of our code tests.
+      </p>
+      <p>
+        When we were first introduced to <code>console.log</code> a couple of weeks ago, I only really used it when I was explicitly told to. I saw that others had commented in Discord, and appeared to be using it frequently to help them test their code. I didn’t really understand who, why or when to do this. As we’ve progressed over the last couple of weeks, I find myself using it more often, to gain insight into what is happening with the chunks of code that I write.  I’m beginning to understand how this tool can be used to help me see where things in the code are working, and where things are potentially breaking. This is a tool that I need more practice with.
+      </p>
+      <h3>Googling</h3>
+      <p>
+        I feel that I am pretty well versed at Googling a problem when I come to it, and using a relatively thoughtful search process to do so. I turn to Google, often, when I’m stuck and generally find that I’m able to locate useful webpages and threads on topic. That being said, my ability to interpret some of those threads and breakdown the technical jargon to something I understand is still something I find challenging. Sometimes, I don’t necessarily understand the examples which have been listed, or the accompanying explanations. I guess as I progress, and my knowledge increases, so too will my ability to decipher this information and abstract what it is that I need.
+      </p>
+      <h3>Asking for Help</h3>
+      <p>
+        We have both facilitators and peers at our disposal for whom we can lean on for support when needed. Thus far, I’ve used the threads other people have posted quite a lot, and they have been incredibly helpful, though I’m not the best at reaching out in a public forum and asking for help myself. Once I’ve established a relationship with someone, I have no issue reaching out and asking for help, though I do find this to be quite daunting in a large public channel when I don’t know the majority of the people. I think I need to challenge myself to ask for help more readily, and lean on the support that is available, without fear of looking stupid.
+      </p>
+      <h3>Improving Process with Reflection</h3>
+      <p>
+        Recently, I think reflection is something that I have started to take more serious, and am definitely becoming better at. I’ve found in the last couple of weeks, that when I solve a problem, it’s not enough to reach a solution, but rather I have an internal desire to be able to understand <em>why</em> and <em>how</em> that that particular solution solved my problem. I’m becoming better at not simply moving on, but rather taking time to reflect on the process before I move onto the next step. This is something that I need to keep in mind, not only at the end of the problem solving process, but throughout also. Reflecting on the problem, the steps I’m taking to try and reach a solution, and how those steps relate to the code I’m creating will also help me work towards solving my problems more efficiently.
+      </p>
+      <h2>Take Home</h2>
+      <p>
+        It’s becoming more and more apparent that problems are a fundamental part of the life of a developer. I guess I knew this before, but now, even after only a few long weeks, I really KNOW this! Staying cool, calm and collected will help me to approach problems with a sense of purpose and clarify. And the more tools I have in my toolbox that can be used to approach those problems, the more successful I will be at solving them.
+      </p>
+    </div>
+  </div>
+</body>
+
+<footer>
+<div class="contact-container">
+  <h4 id="contact">Contact Me:</h4>
+  <div>
+    <a href="https://www.instagram.com/scarooo/" target="_blank"><img class="contact-images" src="../images/insta.png" alt="Instagram Logo"></a>
+    <a href="https://www.linkedin.com/in/scottcarew/" target="_blank"><img class="contact-images" src="../images/linkedin.png" alt="LinkedIn Logo"></a>
+    <a href="https://github.com/scott-carew/" target="_blank"><img class="contact-images" src="../images/github.png" alt="Github Logo"></a>
+  </div>
+</div>
+</footer> 
+
+</html>
