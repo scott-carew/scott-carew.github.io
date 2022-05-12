@@ -31,6 +31,17 @@ h4 {
   color: #7d90a7;  
 }
 
+blockquote {
+  border-left: 3px solid #123c69;
+  padding-left: 15px;
+  font-size: 1.1em;
+  font-style: italic;
+  line-height: 1.8rem;
+  color: #427bb8;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
 #date {
   text-align: center;
   font-style: italic;
@@ -268,5 +279,14 @@ footer {
 
 #scoobysuccess {
 margin-left: 2rem;
+}
+
+#blockQuote {
+  margin-top: 1rem;
+}
+
+#blockName {
+  text-align: right;
+  margin-bottom: 1rem;
 }
 
