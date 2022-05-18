@@ -173,7 +173,8 @@ body {
   }
 
 .welcome-text-container {
-  padding: 0 8em;
+  width: 80%;
+  margin: auto;
 }
 
 .signature {
