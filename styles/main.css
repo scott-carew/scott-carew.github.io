@@ -129,6 +129,19 @@ header {
   color: #7d90a7;
 }
 
+
+/*Index Styling*/
+@media (min-width: 760px){
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+  }
+}
+
+.grid-item1 {
+  grid-column: 1 / 4;
+}
+
 /*Body CSS*/
 
 body {
@@ -175,8 +188,8 @@ body {
 }
 
 .homeimages {
-  max-width: 10em;
-  max-height: 10em;
+  width: 8em;
+  height: 8em;
   margin: 1rem auto;
   border-radius: 6px;
   box-shadow: 6px 6px 46px -5px #123c69;
