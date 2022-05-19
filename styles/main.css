@@ -300,11 +300,13 @@ footer {
   position: relative;
 }
 
+@media (min-width: 780px) {
 #scoobysuccess {
-position: absolute;
-top: 0;
-max-width: 12em;
-max-height: 12em;
+  position: absolute;
+  top: 0;
+  max-width: 12em;
+  max-height: 12em;
+  }
 }
 
 #blockQuote {
