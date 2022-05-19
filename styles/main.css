@@ -87,7 +87,8 @@ hr {
 
 header {
   width: 100%;
-
+  position: fixed;
+  z-index: 1;
 }
 
 .bannerimage-container {
@@ -102,6 +103,7 @@ header {
   height: auto;
 }
 
+
 .nav-bar {
   width: 100%;
   height: auto;
@@ -109,7 +111,6 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #123c69; 
-  
 }
 
 .nav-links {
@@ -145,20 +146,19 @@ header {
 /*Body CSS*/
 
 body {
-  background-color: #d5dce4;  
+  background-color: #d5dce4; 
 }
 
 .body-container {
   width: 65%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2em;
+  /* margin-top: 2em; */
   margin-bottom: 2em;
+  position: relative;
+  top: 28vh;
   }
 
-.content-container {
-  
-}
 
 .image-container {
   display: flex;
@@ -259,7 +259,10 @@ body {
 /*Footer CSS*/
 
 footer {
-  background-color: #f1Ece9
+  background-color: #f1Ece9;
+  position: relative;
+  top: 28vh;
+
 }
 
 .contact-container {
