@@ -296,8 +296,15 @@ footer {
   border-radius: 4px;
 }
 
+#scooby-container {
+  position: relative;
+}
+
 #scoobysuccess {
-margin-left: 2rem;
+position: absolute;
+top: 0;
+max-width: 12em;
+max-height: 12em;
 }
 
 #blockQuote {
