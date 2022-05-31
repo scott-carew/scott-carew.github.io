@@ -145,8 +145,23 @@ header {
 
 /*Body CSS*/
 
-body {
-  background-color: #d5dce4; 
+@media (min-width: 1200px) {
+  body {
+    background-color: #d5dce4; 
+  }
+}
+
+@media (max-width: 767px) and (min-width: 320px)  {
+  body{
+    background-color: #eaf0f6;
+
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  body{
+    background-color: #a4b0bd;
+  }
 }
 
 .body-container {
